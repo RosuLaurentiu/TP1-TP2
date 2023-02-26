@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="stylesheet" type="text/css" href="src/style login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39e6425bcd.js" crossorigin="anonymous"></script>
     <script defer src="src/js/app.js"></script>
 
@@ -16,22 +19,50 @@
 <body>
     <header>
         <img class="logo" src="src/images/toppng.com-netflix-logo-png-download-1280x544.png">
-        <nav>
+    </header>
+    <main class="signin">
+        <div class="login-form-container">
+            <form>
+                <h1 class="white left">Log In</h1>
+                <input type="text" id="username" name="username" placeholder="Email">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button type="submit" method="post">Log In</button>
+                <div class="options gray small">
+                    <div class="remember">
+                        <input type="checkbox" id="myCheckbox">
+                        <label for="myCheckbox">Remember me</label>
+                    </div>
+                    <p><a href="#">Need help?</a></p>
+                </div>
+                <div class="gray bot">
+                    <p class="medium">First time on netflix ? <a href="#" class="white"> Sign in</a></p>
+                    <p class="small">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span><a
+                                href="#">Learn
+                                more.</a></span></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Questions? Call <a href="#">(+33) 0805-543-064</a></p>
             <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Netflix Shop</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+            <nav>
                 <select id="language">
                     <option value="en">English</option>
                     <option option value="fr">French</option>
                 </select>
-                <button id="sign">Sign in</button>
-            </ul>
-        </nav>
-    </header>
-    <main class="start">
-        <section class="hero">
-        </section>
-    </main>
-    <main class="signin"></main>
-    <footer></footer>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 
