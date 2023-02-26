@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/Netflix-Background-prueba-1.jpg);
+    background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+    z-index: -1;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+header{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 2rem;
+}
+
+.logo{
+    scale: 0.8;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+#language {
+    font-size: .875rem;
+    line-height: 1.3em;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    border: 1px solid #aaa;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  #language option {
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+  }
+  
+  nav::before {
+    content: "\f0ac"; /* Unicode value for the globe icon in Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    left: 30px;
+    top: 9%;
+    transform: translateY(-50%);
+  }
+
+  nav::after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 135px;
+    top: 9%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: white;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  button{
+    height: 100%;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 7px 17px;
+    white-space: nowrap;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-left: 24px;
+  }
+
+  h1, h2,h3,p{
+    color: white;
+    text-align: center;
+    margin: 1rem 4rem;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-weight: normal;
+  }
+
+  .start{
+    padding: 15% 25%;
+  }
+
+  .hero{
+    max-width: 700px;
+    margin: auto;
+  }
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  input{
+    border-radius: 4px 0px 0px 4px;
+    height: 60px;
+    min-width: 450px;
+    padding: 0 10px 0;
+    outline: none;
+    box-shadow: 0px 0px 5px #000000;
+    border:1px solid #000000;
+    border-radius:0;
+  }
+
+  input:focus {
+    border: 0.5px solid #001eff;  
+  }
+
+  #start{
+    margin: 0;
+    height: 60px;
+  }
+
+  #start::after {
+    content: '';
+    display: inline-block;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+  }
+  
