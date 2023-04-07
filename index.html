@@ -6,45 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="stylesheet" type="text/css" href="dist/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39e6425bcd.js" crossorigin="anonymous"></script>
+    <script defer src="src/js/app.js"></script>
     <script defer src="src/js/app.js"></script>
 
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="src/images/toppng.com-netflix-logo-png-download-1280x544.png">
-        <nav>
-            <ul>
-                <li>
-                    <select id="language">
-                        <option value="en">English</option>
-                        <option option value="fr">French</option>
-                    </select>
-                </li>
-                <li>
-                    <a href="login.html"><button id="sign">Sign in</button></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="start">
-        <section class="hero">
-            <h1 class="title">Unlimeted movies, TV shows, and more.</h1>
-            <h2>Watch anywhere. Cancel anytime.</h2>
-            <p>Ready to watch? Enter your email to create or restart your mmbership.</p>
-            <form class="email">
-                <input type="email" id="email" placeholder="Email address" />
-                <button id="start">Get Started</button>
-            </form>
-        </section>
-    </main>
-    <main class="signin"></main>
+    <section class="bg">
+        <header>
+            <img class="logo" src="src/images/toppng.com-netflix-logo-png-download-1280x544.png">
+            <nav>
+                <ul>
+                    <li>
+                        <select id="language">
+                            <option value="en">English</option>
+                            <option option value="fr">French</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="login.html"><button id="sign">Sign in</button></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="start">
+            <section class="hero">
+                <h1 class="title">Unlimeted movies, TV shows, and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <p>Ready to watch? Enter your email to create or restart your mmbership.</p>
+                <form class="email">
+                    <input type="email" id="email" placeholder="Email address" />
+                    <button id="start">Get Started</button>
+                </form>
+            </section>
+        </main>
+        <main class="signin"></main>
+    </section>
+    <section class="prize"></section>
     <footer></footer>
 
 </body>
