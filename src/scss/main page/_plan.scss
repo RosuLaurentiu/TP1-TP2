@@ -28,8 +28,8 @@
 
 .plan{
     margin: auto;
-    max-width: 1000px;
-    max-height: 700px;
+    max-width: 900px;
+    max-height: 900px;
 }
 
 .options{
@@ -73,4 +73,11 @@ tr > td:first-child{
 //     margin-right: auto;
 // }
 
-
+.mark{
+    content: '\2714'; /* Unicode for checkmark symbol */
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: red;
+}
