@@ -62,7 +62,7 @@
                     <th></th>
                     <th>
                         <div class="options" id="basic">
-                            <div class="centered basic selected">Basic with ads</div>
+                            <div class="centered basic">Basic with ads</div>
                         </div>
                     </th>
                     <th>
@@ -72,50 +72,50 @@
                     </th>
                     <th>
                         <div class="options" id="premium">
-                            <div class="centered premium">Premium</div>
+                            <div class="centered premium selected">Premium</div>
                         </div>
                     </th>
                 </tr>
                 <tr>
                     <td>Monthly Price</td>
-                    <td class="basic selected">EUR5.99</td>
+                    <td class="basic">EUR5.99</td>
                     <td class="standard">EUR13.49</td>
-                    <td class="premium">EUR17.99</td>
+                    <td class="premium selected">EUR17.99</td>
                 </tr>
 
                 <tr>
                     <td>Video quality</td>
-                    <td class="basic selected">Good</td>
+                    <td class="basic">Good</td>
                     <td class="standard">Better</td>
-                    <td class="premium">Best</td>
+                    <td class="premium selected">Best</td>
                 </tr>
                 <tr>
                     <td>Resolution</td>
-                    <td class="basic selected">720p</td>
+                    <td class="basic">720p</td>
                     <td class="standard">1080p</td>
-                    <td class="premium">4k+HDR</td>
+                    <td class="premium selected">4k+HDR</td>
                 </tr>
                 <tr>
                     <td>Watch on your TV, computer, mobile phone and tablet</td>
-                    <td class="mark basic selected">&#10003;</td>
+                    <td class="mark basic">&#10003;</td>
                     <td class="mark standard">&#10003;</td>
-                    <td class="mark premium">&#10003;</td>
+                    <td class="mark premium selected">&#10003;</td>
                 </tr>
                 <tr>
                     <td>Spatial audio</td>
                     <td>
-                        <div class="noaudio basic selected"></div>
+                        <div class="noaudio basic"></div>
                     </td>
                     <td>
                         <div class="noaudio standard"></div>
                     </td>
-                    <td class="premium">&#10003;</td>
+                    <td class="premium selected">&#10003;</td>
                 </tr>
                 <tr>
                     <td>Number of divices for downloads</td>
-                    <td class="basic selected">0</td>
+                    <td class="basic">0</td>
                     <td class="standard">2</td>
-                    <td class="premium">6</td>
+                    <td class="premium selected">6</td>
                 </tr>
             </table>
             <button>Next</button>
@@ -126,8 +126,21 @@
         <main class="giftcontent">
             <h4>STEP 3 of 3</h4>
             <h1>Enter your gift code</h1>
-            <input type="number" id="giftcode" placeholder="Gift Card Pin or Code" />
-            <div class="choise"></div>
+            <input type="text" id="giftcode" placeholder="Gift Card Pin or Code" />
+            <div class="choise">
+                <div class="choosen basic">
+                    <h3>EUR5.99/month</h3>
+                    <p>Basic Plan</p>
+                </div>
+                <div class="choosen standard">
+                    <h3>EUR13.49/month</h3>
+                    <p>Standard Plan</p>
+                </div>
+                <div class="choosen premium selected">
+                    <h3>EUR17.99/month</h3>
+                    <p>Premium Plan</p>
+                </div>
+            </div>
             <button class="reedem" id="reedem">Reedem gift card</button>
             <p class="small">This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#"
                     class="blue"> Learn
@@ -141,15 +154,21 @@
                 </tr>
                 <tr>
                     <td>Votre Email</td>
-                    <td id="demail"></td>
+                    <td>
+                        <p id="demail"></p>
+                    </td>
                 </tr>
                 <tr>
                     <td>Votre abonnement</td>
-                    <td id="dsub"></td>
+                    <td>
+                        <p id="dsub"></p>
+                    </td>
                 </tr>
                 <tr>
                     <td>Votre code cadeau</td>
-                    <td id="dcode"></td>
+                    <td>
+                        <p id="dcode"></p>
+                    </td>
                 </tr>
             </table>
         </main>

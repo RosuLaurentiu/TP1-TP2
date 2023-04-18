@@ -11,7 +11,7 @@ const basic = document.getElementById("basic");
 const standard = document.getElementById("standard");
 const premium = document.getElementById("premium");
 
-var subscription = 0;
+var subscription = 3;
 
 function selectStandard() {
     for (let i = 0; i < basicElements.length; i++) {
@@ -83,9 +83,32 @@ premium.addEventListener("click", selectPremium);
 ////////////////////////////////
 
 const reedem = document.getElementById("reedem");
-const code = document.getElementById("giftcode");
+const gift = document.getElementById("giftcode");
 const email = document.getElementById("email");
 
+const demail = document.getElementById("demail");
+const dsub = document.getElementById("dsub");
+const dcode = document.getElementById("dcode");
+
 function buy() {
+    const code = gift.value;
+
+    if (code === "MrRobot") {
+        demail.innerHTML = email.value;
+        dcode.innerHTML = code;
+
+        if (subscription === 1) {
+            dsub.innerHTML = "Basic"
+        } else if (subscription === 2) {
+            dsub.innerHTML = "Standard"
+        } else if (subscription === 3) {
+            dsub.innerHTML = "Premium"
+        }
+
+    } else {
+        alert("code is false")
+    }
 
 }
+
+reedem.addEventListener("click", buy);

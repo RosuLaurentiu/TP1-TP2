@@ -22,3 +22,23 @@ td.selected{
 .noaudio.selected{
     background-color: red;
 }
+
+#demail, #dsub, #dcode{
+    color: black;
+    font-size: 14px;
+    margin: 0;
+}
+
+.choosen p, .choosen h3{
+    color: black;
+    margin: 0;
+    text-align: left;
+}
+
+.choosen{
+    display: none;
+}
+.choosen.selected{
+    background-color: rgb(210, 210, 210);
+    display: block;
+}
