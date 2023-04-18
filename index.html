@@ -61,61 +61,61 @@
                 <tr>
                     <th></th>
                     <th>
-                        <div class="options">
-                            <div class="centered">Basic with ads</div>
+                        <div class="options" id="basic">
+                            <div class="centered basic selected">Basic with ads</div>
                         </div>
                     </th>
                     <th>
-                        <div class="options">
-                            <div class="centered">Standard</div>
+                        <div class="options" id="standard">
+                            <div class="centered standard">Standard</div>
                         </div>
                     </th>
                     <th>
-                        <div class="options">
-                            <div class="centered">Premium</div>
+                        <div class="options" id="premium">
+                            <div class="centered premium">Premium</div>
                         </div>
                     </th>
                 </tr>
                 <tr>
                     <td>Monthly Price</td>
-                    <td>EUR5.99</td>
-                    <td>EUR13.49</td>
-                    <td>EUR17.99</td>
+                    <td class="basic selected">EUR5.99</td>
+                    <td class="standard">EUR13.49</td>
+                    <td class="premium">EUR17.99</td>
                 </tr>
 
                 <tr>
                     <td>Video quality</td>
-                    <td>Good</td>
-                    <td>Better</td>
-                    <td>Best</td>
+                    <td class="basic selected">Good</td>
+                    <td class="standard">Better</td>
+                    <td class="premium">Best</td>
                 </tr>
                 <tr>
                     <td>Resolution</td>
-                    <td>720p</td>
-                    <td>1080p</td>
-                    <td>4k+HDR</td>
+                    <td class="basic selected">720p</td>
+                    <td class="standard">1080p</td>
+                    <td class="premium">4k+HDR</td>
                 </tr>
                 <tr>
                     <td>Watch on your TV, computer, mobile phone and tablet</td>
-                    <td class="mark">&#10003;</td>
-                    <td class="mark">&#10003;</td>
-                    <td class="mark">&#10003;</td>
+                    <td class="mark basic selected">&#10003;</td>
+                    <td class="mark standard">&#10003;</td>
+                    <td class="mark premium">&#10003;</td>
                 </tr>
                 <tr>
                     <td>Spatial audio</td>
                     <td>
-                        <hr>
+                        <div class="noaudio basic selected"></div>
                     </td>
                     <td>
-                        <hr>
+                        <div class="noaudio standard"></div>
                     </td>
-                    <td>&#10003;</td>
+                    <td class="premium">&#10003;</td>
                 </tr>
                 <tr>
                     <td>Number of divices for downloads</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>6</td>
+                    <td class="basic selected">0</td>
+                    <td class="standard">2</td>
+                    <td class="premium">6</td>
                 </tr>
             </table>
             <button>Next</button>
@@ -128,7 +128,7 @@
             <h1>Enter your gift code</h1>
             <input type="number" id="giftcode" placeholder="Gift Card Pin or Code" />
             <div class="choise"></div>
-            <button class="reedem">Reedem gift card</button>
+            <button class="reedem" id="reedem">Reedem gift card</button>
             <p class="small">This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#"
                     class="blue"> Learn
                     more.</a> </p>
@@ -141,15 +141,15 @@
                 </tr>
                 <tr>
                     <td>Votre Email</td>
-                    <td></td>
+                    <td id="demail"></td>
                 </tr>
                 <tr>
                     <td>Votre abonnement</td>
-                    <td></td>
+                    <td id="dsub"></td>
                 </tr>
                 <tr>
                     <td>Votre code cadeau</td>
-                    <td></td>
+                    <td id="dcode"></td>
                 </tr>
             </table>
         </main>

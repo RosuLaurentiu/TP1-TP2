@@ -270,7 +270,7 @@ tr > td:first-child {
   height: 100px;
   margin-right: 10px;
   font-size: 18px;
-  color: red;
+  color: gray;
 }
 
 .gift {
@@ -330,4 +330,28 @@ tr > td:first-child {
 
 .data {
   margin-top: 110px;
+}
+
+.centered.basic:not(.selected), .centered.standard:not(.selected), .centered.premium:not(.selected) {
+  background-color: rgb(255, 98, 98);
+}
+
+.selected {
+  background-color: red;
+}
+
+td.selected {
+  color: red !important;
+  background-color: white;
+}
+
+.noaudio {
+  width: 30px;
+  height: 1.9px;
+  background-color: gray;
+  margin-left: 50px;
+}
+
+.noaudio.selected {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
